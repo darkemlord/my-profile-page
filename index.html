@@ -21,7 +21,7 @@
     <h1>Emanuel Caro</h1>
     <h2>Soon i'm gonna be a Programmer 💻</h2>
     <p>I enjoy playing guitar 🎸  teaching spanish 🇪🇸 and of course coding 👨🏻‍💻</p>
-    <button onclick="changeImage()">Click me!</button>
+    <button onclick="changeAlways()">Click me!</button>
   </div>
 
   <!-- HOBBIES CARD-->
@@ -67,8 +67,18 @@
     </ul>
   </div>
   <script>
-    function changeImage(){
-      document.querySelector(".profile-img").src = "images/haku.jpeg"
+    image_1 = document.querySelector(".profile-img")
+    buttonState = false
+
+    function changeAlways(){
+      if (buttonState === false){
+        image_1.src = "images/haku.jpeg"
+        buttonState = true
+      }
+      else if(buttonState === true){
+        image_1.src = "images/profile_pic.jpeg"
+        buttonState = false
+      }
     }
   </script>
   </body>
