@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emanuel Caro</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+  <img class="central" src="./images/background.jpeg" alt="background">
+  <!-- PROFILE CARD-->
+  <div class="card-container" id="profile">
+    <div class="img-container">
+      <img class="profile-img" src="images/profile_pic.jpeg" alt="My profile picture">
+    </div>
+    <h1>Emanuel Caro</h1>
+    <h2>Soon i'm gonna be a Programmer 💻</h2>
+    <p>I enjoy playing guitar 🎸  teaching spanish 🇪🇸 and of course coding 👨🏻‍💻</p>
+    <button onclick="changeImage()">Click me!</button>
+  </div>
+
+  <!-- HOBBIES CARD-->
+  <div class="card-container" id="hobbies">
+    <h2 class="hobbie-title">Take a look at my passions!</h2>
+    <div class="hobbie-container">
+      <div class="hobbie-card">
+        <h3>Guitar time</h3>
+        <p>I use to play the guitar in a band</p>
+        <img src="images/guitar.jpeg" alt="guitar">
+      </div>
+      <div class="hobbie-card">
+        <h3>Class time</h3>
+         <p>I am teaching spanish for 6 years!</p>
+        <img src="images/spanish.jpeg" alt="spanish">
+      </div>
+      <div class="hobbie-card">
+        <h3>Coding time</h3>
+        <p>Trying hard with ruby!</p>
+        <img src="images/code.jpeg" alt="coding">
+      </div>
+    </div>
+  </div>
+
+  <!-- SOCIAL MEDIA CARD-->
+  <div class = "card-container" id="social">
+    <ul class= "social-list">
+      <li>
+        <a href="#">
+          <em class="fab fa-facebook-f"></em>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <em class="fab fa-linkedin-in"></em>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <em class="fab fa-twitter"></em>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <script>
+    function changeImage(){
+      document.querySelector(".profile-img").src = "images/haku.jpeg"
+    }
+  </script>
+  </body>
+  </html>

@@ -1,0 +1,130 @@
+*{
+  font-family: 'Roboto Slab', serif;
+}
+body{
+  background-color:#2E4A6D;
+}
+
+.central{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0.5;
+  position: fixed;
+  z-index: -1;
+}
+
+h1, h2, h3 {
+  color: #DFEAF6;
+  text-align: center;
+}
+
+a:visited {
+ text-decoration: none;
+ color: #DFEAF6;
+}
+
+p {
+  text-align: center;
+  color: #29303E;
+}
+
+button{
+  display: block;
+  margin: auto;
+  position: relative;
+  bottom: 0.5rem;
+  background-color: #5353A0;
+  color: #DFEAF6;
+  border-radius: 1rem;
+}
+.card-container{
+  width: 70%;
+  margin: auto;
+  background-color: rgba(249, 111, 13, 0.9);
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+}
+
+#profile > h2 {
+  color: #29303E;
+}
+.img-container{
+  padding-top: 1.5rem;
+}
+
+.img-container > img{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+}
+
+.hobbie-container{
+  width: 100%;
+  height: 18rem;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.hobbie-title{
+  padding-top: 1.5rem ;
+}
+
+.hobbie-card > img{
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px -1px 18px 0px rgba(0,0,0,0.75);
+}
+
+.hobbie-card > img:hover{
+  width: 8.5rem;
+  height: 8.5rem;
+}
+
+.social-list{
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0%;
+}
+
+#social li{
+ list-style-type: none;
+}
+
+#social li a{
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: #DFEAF6;
+}
+
+#social li a:hover{
+  font-size: 2.1rem;
+  color:#29303E;
+}
+
+@media (max-width: 850px) {
+  /* For a screen < 960px, this CSS will be read */
+  .hobbie-container{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 50rem;
+}
+}
